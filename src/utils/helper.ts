@@ -25,4 +25,44 @@ export default class HelperService {
             }, 2000);
         } );
     }
+
+    public getA(param: boolean = false): Promise<String>{
+        console.log("getA");
+        return new Promise((resolve, reject) => {
+            if(param)
+                resolve("A1");
+            else
+                resolve("A2");
+        });
+    }
+
+    public getB(param: boolean = false): Promise<String>{
+        console.log("getB");
+        return new Promise((resolve, reject) => {
+            if(param)
+                resolve("B1");
+            else
+                resolve("B2");
+        });
+    }
+
+    public getC(param: boolean = false): Promise<String>{
+        console.log("getC");
+        return new Promise((resolve, reject) => {
+            if(param)
+                resolve("C1");
+            else
+                resolve("C2");
+        });
+    }
+
+    public getD(param: boolean = false): Promise<String>{
+        console.log("getD");
+        return new Promise((resolve, reject) => {
+            if(param)
+                resolve("D1");
+            else
+                resolve("D2");
+        });
+    }
 }
